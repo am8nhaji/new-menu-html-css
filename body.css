@@ -32,41 +32,41 @@
     }
 }
 
-@media (min-width: 721px) and (max-width: 1440px) {
+@media (min-width: 721px) and (max-width: 1170px) {
     .article {
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .name {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .description {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .price {
-        font-size: 30px;
+        font-size: 26px;
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1171px) {
     .article {
         width: 70%;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .name {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .description {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .price {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
