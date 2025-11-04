@@ -70,13 +70,13 @@ body {
   margin: 0;
   font-family: "Kalameh-Bold", sans-serif;
   background: #16404D;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .navbar {
-  height: 60px;
   display: flex;
   justify-content: center;
-  background: #16404D;
+  margin: 0px 0px 10px 0px;
 }
 
 .navbar button {
@@ -87,27 +87,33 @@ body {
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
-  padding: 0px 20px;
-  margin: 12px 4px;
-  transition: color 0.5s, background 0.5s;
+  margin: 0px 2px;
+  transition: color 0.5s, background 0.5s, content-visibility 0.5s;
+  cursor: pointer;
 }
 
 .navbar button:focus {
   background: #DDA853;
-  cursor: pointer;
+  color: #16404D;
 }
 
-.navbar i {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-  margin: 0 8px;
+.navbar button i {
+  font-size: 26px;
+  margin: 8px 18px 0px 18px;
+  vertical-align: middle;
+
 }
 
-.navbar p {
+.navbar button p {
   font-family: "Kalameh-Bold", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
+  vertical-align: middle;
+  content-visibility: hidden;
+}
+
+.navbar button:focus p {
+  content-visibility: visible;
 }
 
 .article {
