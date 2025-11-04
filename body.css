@@ -1,154 +1,172 @@
 @font-face {
-    font-family: "Kalameh-Bold";
-    src: url(fonts/KalamehFaNum-Bold.ttf);
+  font-family: "Kalameh-Bold";
+  src: url(fonts/KalamehFaNum-Bold.ttf);
 }
 
 @font-face {
-    font-family: "Kalameh";
-    src: url(fonts/KalamehFaNum-Medium.ttf);
+  font-family: "Kalameh";
+  src: url(fonts/KalamehFaNum-Medium.ttf);
 }
 
 @font-face {
-    font-family: "Kalameh-Thin";
-    src: url(fonts/KalamehFaNum-Thin.ttf);
+  font-family: "Kalameh-Thin";
+  src: url(fonts/KalamehFaNum-Thin.ttf);
 }
 
 @media (max-width: 430px) {
-    .article {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .article {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (min-width: 431px) and (max-width: 540px) {
-    .article {
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .article {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
 @media (min-width: 541px) and (max-width: 1023px) {
-    .article {
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .article {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-    .article {
-        width: 90%;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .article {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
 }
 
 @media (min-width: 1281px) {
-    .article {
-        width: 50%;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .article {
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 body {
-    direction: rtl;
-    background-color: #DDA853;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  direction: rtl;
+  background-color: #DDA853;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    color: #FBF5DD;
-    margin: 0;
-    font-family: "Kalameh-Bold", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #FBF5DD;
+  margin: 0;
+  font-family: "Kalameh-Bold", sans-serif;
+  background: #16404D;
 }
 
 .navbar {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    background: #16404D;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background: #16404D;
 }
 
-.navbar div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    padding: 0px 20px;
+.navbar button {
+  border: 0;
+  color: #FBF5DD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 0px 20px;
+  margin: 12px 4px;
+  transition: color 0.5s, background 0.5s;
 }
 
-.navbar img {
-    width: 24px;
-    height: 24px;
-    margin: 0 8px;
+.navbar button:focus {
+  background: #DDA853;
+  cursor: pointer;
+}
+
+.navbar i {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+
+.navbar p {
+  font-family: "Kalameh-Bold", sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
 .article {
-    display: grid;
-    margin: 180px 0px 20px 0px;
-    gap: 16px;
-    font-family: "Kalameh", sans-serif;
+  display: grid;
+  margin: 180px 0px 20px 0px;
+  gap: 16px;
+  font-family: "Kalameh", sans-serif;
 }
 
 .food-card {
-    background: #16404D;
-    color: #FBF5DD;
-    border-radius: 20px 2px 20px 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    margin: 0;
+  background: #16404D;
+  color: #FBF5DD;
+  border-radius: 20px 2px 20px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .food-card div {
-    margin: 4px 0px;
+  margin: 4px 0px;
 }
 
 .image {
-    height: 50%;
+  height: 50%;
 }
 
 .image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 1px 10px 1px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 1px 10px 1px;
+  object-fit: cover;
 }
 
 .name {
-    height: 15%;
-    direction: rtl;
-    display: flex;
-    align-items: center;
-    font-family: "Kalameh-Bold", sans-serif;
-    font-size: 24px;
+  height: 15%;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  font-family: "Kalameh-Bold", sans-serif;
+  font-size: 24px;
 }
 
 .description {
-    height: 15%;
-    direction: rtl;
-    font-family: "Kalameh", sans-serif;
-    font-size: 16px;
+  height: 15%;
+  direction: rtl;
+  font-family: "Kalameh", sans-serif;
+  font-size: 16px;
 
 }
 
 .price {
-    height: 20%;
-    direction: rtl;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: "Kalameh", sans-serif;
-    font-size: 22px;
+  height: 20%;
+  direction: rtl;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Kalameh", sans-serif;
+  font-size: 22px;
 }
